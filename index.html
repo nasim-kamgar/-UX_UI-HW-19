@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="CSS/indexStyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Portfolio Website</title>
 </head>
 
@@ -24,7 +25,7 @@
         </div>
         <div class="nav-contact">
           <ul class="">
-            <li class="nav-item">Let's Work Together</li>
+            <li id ="workTogether" class="nav-item">Let's Work Together</li>
               
           </ul>
         </div>
@@ -33,6 +34,7 @@
   </header>
   <!--end of header-->
   <!--start of heroImg-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">Back to top</button>
   <div class="heroImg">
     <img src="black and whiteIMG_5451.jpg">
     <div class="flex-center">
@@ -47,8 +49,10 @@
       branding,identity and advertising layouts. I like to combine my skills to bring out the most creative and
       unique visual solution.</p>
     <div>
-      <button class="btn-primary">Download Resume</button>
+      <!-- <a class='btn-primary'  href='docs/Resume.pdf'>Download resume</a> -->
+      <button id="downloadResumeBtn" class="btn-primary">Download Resume</button>
     </div>
+    
   </div>
   <!--end of card-->
   <!--case study section-->
@@ -112,5 +116,6 @@
   <!--end of footer-->
 
 </body>
+<script src="js/index.js "></script>
 
 </html>

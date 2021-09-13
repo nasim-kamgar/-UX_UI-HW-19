@@ -1,4 +1,7 @@
-  .header {
+html {
+  scroll-behavior: smooth;
+}
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,6 +50,14 @@
     text-decoration: none;
     color: #173136;
   }
+
+ .hoverAcher{
+  text-decoration: none;
+  color:coral;
+  
+  
+ }
+ 
   
   .flex-center h1 {
     font-size: 48px;
@@ -308,4 +319,20 @@
   .fa {
     padding: 20px;
   }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 1+px;
+    border: none;
+    outline: none;
+    background-color: coral;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
  
